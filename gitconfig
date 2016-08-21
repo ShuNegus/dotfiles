@@ -1,6 +1,6 @@
 [user]
-    name = Dan Lowe
-    email = dan@tangledhelix.com
+	name = Vladimir Shutov
+	email = v@smd.su
 
 [alias]
 
@@ -85,7 +85,7 @@
     pager = less
     editor = vim
     quotepath = false
-    excludesfile = ~/.gitignore
+	excludesfile = /Users/negus/.gitignore_global
 
 [color]
     branch = auto
@@ -95,7 +95,7 @@
     ui = auto
 
 [github]
-    user = tangledhelix
+    user = ShuNegus
 
 [diff]
     # For Github-style word diffs
@@ -129,3 +129,11 @@
 
 [mergetool]
     prompt = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/negus/.stCommitMsg
