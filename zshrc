@@ -111,6 +111,9 @@ alias jpdate='TZ=Asia/Tokyo date'
 alias nldate='TZ=Europe/Amsterdam date'
 alias fidate='TZ=Europe/Finland date'
 
+# Change TTL for Yota Internet
+alias yota='sudo sysctl -w net.inet.ip.ttl=65'
+
 # show me platform info
 alias os='uname -srm'
 
