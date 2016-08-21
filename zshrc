@@ -49,6 +49,7 @@ zstyle ':omz:load' omodule \
     'osx' \
     'syntax-highlighting' \
     'history-substring-search' \
+    'sublime' \
     'prompt'
 
 # Set the prompt theme to load.
