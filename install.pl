@@ -233,9 +233,9 @@ sub replace_file {
 # clone my omz repository
 sub omz_cloner {
     my $omz_path = "$basedir/oh-my-zsh";
-    my $repo_url = 'https://github.com/tangledhelix/oh-my-zsh.git';
+    my $repo_url = 'https://github.com/ShuNegus/prezto.git';
     if ($use_ssh) {
-        $repo_url = 'git@github.com:tangledhelix/oh-my-zsh.git';
+        $repo_url = 'git@github.com:ShuNegus/prezto.git';
     }
     if (-f $omz_path or -d $omz_path) {
         print "    $omz_path already exists, skipping\n";
