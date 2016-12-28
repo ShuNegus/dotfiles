@@ -1,6 +1,14 @@
 .DS_Store
 .*.swp
-*~
 *.sublime-workspace
 *.sublime-project
 
+syntax: glob
+*.xcuserstate
+*.xcscheme
+xcschememanagement.plist
+Pods
+Podfile.lock
+*.xcscmblueprint
+*.xcbkptlist
+public/

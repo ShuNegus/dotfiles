@@ -85,7 +85,7 @@
     pager = less
     editor = nano
     quotepath = false
-	excludesfile = /Users/negus/.gitignore_global
+	excludesfile = /Users/negus/.dotfiles/gitignore
 
 [color]
     branch = auto

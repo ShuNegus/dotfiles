@@ -93,6 +93,10 @@ mosh() {
     fi
 }
 
+# Init rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
+
 alias vi='vim'
 alias view='vim -R'
 alias vimdiff='vimdiff -O'
@@ -113,6 +117,9 @@ alias fidate='TZ=Europe/Finland date'
 
 # Change TTL for Yota Internet
 alias yota='sudo sysctl -w net.inet.ip.ttl=65'
+
+# Connect to SMD Droplet with SSH
+alias smd='ssh root@46.101.188.53'
 
 # show me platform info
 alias os='uname -srm'
@@ -330,3 +337,6 @@ fi
 [[ -s $HOME/.zshrc.local ]] && source $HOME/.zshrc.local
 
 __zshrc_load_complete=1
+
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
