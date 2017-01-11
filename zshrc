@@ -119,7 +119,7 @@ alias fidate='TZ=Europe/Finland date'
 alias yota='sudo sysctl -w net.inet.ip.ttl=65'
 
 # Connect to SMD Droplet with SSH
-alias smd='ssh root@46.101.188.53'
+alias smd='ssh deploy@46.101.140.96'
 
 # show me platform info
 alias os='uname -srm'
