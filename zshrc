@@ -340,3 +340,4 @@ __zshrc_load_complete=1
 
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$HOME/.fastlane/bin:$PATH" # Add fastlane to PATH for scripting
