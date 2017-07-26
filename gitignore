@@ -8,7 +8,11 @@ syntax: glob
 *.xcscheme
 xcschememanagement.plist
 Pods
-Podfile.lock
 *.xcscmblueprint
 *.xcbkptlist
 public/
+.idea
+.idea/
+fastlane_build/
+fastlane/report.xml
+fastlane/README.md
