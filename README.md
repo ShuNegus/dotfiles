@@ -70,6 +70,10 @@ and will not interfere with your existing environment.
 
     cd ~/.dotfiles && ./install.pl all
 
+Set Zsh as your default shell:
+
+    chsh -s /bin/zsh
+
 `install.pl` will ask you before overwriting any files that already exist.
 
 You can also install subsets of the environment using one of the following.
