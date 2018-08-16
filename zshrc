@@ -118,6 +118,16 @@ alias fidate='TZ=Europe/Finland date'
 # Change TTL for Yota Internet
 alias yota='sudo sysctl -w net.inet.ip.ttl=65'
 
+# Func change str to UPPERCASE
+func uppercase() {
+  echo "$1" | tr '[a-zа-я]' '[A-ZА-Я]'
+}
+
+# Func change STR to lowercase
+func lowercase() {
+  echo "$1" | tr '[A-ZА-Я]' '[a-zа-я]'
+}
+
 # Connect to SMD Droplet with SSH
 alias smd='ssh deploy@46.101.140.96'
 

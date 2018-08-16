@@ -5,8 +5,7 @@
 
 syntax: glob
 *.xcuserstate
-*.xcscheme
-xcschememanagement.plist
+
 Pods
 *.xcscmblueprint
 *.xcbkptlist
@@ -17,3 +16,5 @@ fastlane_build/
 fastlane/report.xml
 fastlane/README.md
 screenshots
+IDEWorkspaceChecks.plist
+xcschememanagement.plist
