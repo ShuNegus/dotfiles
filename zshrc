@@ -93,6 +93,14 @@ mosh() {
     fi
 }
 
+summ() {
+  content=$(curl -s "https://summa-propisyu.ru/?summ=$1&vat=18&val=0&sep=0" | pup --pre 'textarea#result2')
+  echo $content | awk -F'[><]' '{print $1}'
+}
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
+
 # Init rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
