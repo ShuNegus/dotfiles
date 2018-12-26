@@ -93,10 +93,36 @@ mosh() {
     fi
 }
 
+# Переводит число в пропись
 summ() {
   content=$(curl -s "https://summa-propisyu.ru/?summ=$1&vat=18&val=0&sep=0" | pup --pre 'textarea#result2')
   echo $content | awk -F'[><]' '{print $1}'
 }
+
+# Разбивает сумму на коэфициенты для счета
+split_order() {
+  for a in {5..100}
+  do
+      for b in {5..100}
+      do
+          for c in {5..100}
+          do
+              for d in {5..100}
+              do
+                  for e in {5..100}
+                  do
+                      sum=$((900 * a + 800 * b + 180 * c + 900 * d + 450 * e))
+                      if ((sum == $1)); then
+                        echo "a: $a, b: $b, c: $c, d: $d, e: $e"
+                        break 5
+                      fi
+                  done
+              done
+          done
+      done
+  done
+}
+
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
