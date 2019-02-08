@@ -134,6 +134,7 @@ eval "$(rbenv init -)"
 alias vi='vim'
 alias view='vim -R'
 alias vimdiff='vimdiff -O'
+alias sshcopy='pbcopy < ~/.ssh/id_rsa.pub'
 
 alias c='clear'
 
