@@ -86,6 +86,7 @@
     editor = nano
     quotepath = false
 	excludesfile = /Users/negus/.dotfiles/gitignore
+	compression = 0
 
 [color]
     branch = auto
